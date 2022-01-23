@@ -18,14 +18,13 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/68f51ab751.js" crossorigin="anonymous"></script>
-
-
 </head>
+
 
 <body>
 
     <!-- Header Section with navbar -->
-    <header class="">
+    <header id="home">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -39,16 +38,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="#packages">Packages</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#faq">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
 
                     </ul>
@@ -115,7 +114,7 @@
     <main>
 
         <!-- package section -->
-        <section class="container py-3">
+        <section class="container py-3" id="packages">
             <div>
                 <h2 class="text-center my-5">Our Package</h2>
             </div>
@@ -195,8 +194,48 @@
             </div>
         </section>
 
+
+        <!-- Toast Section -->
+        <section>
+            <button type="button" class="btn btn-danger toast-button" id="basicToastBtn">Subscribe</button>
+            <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                <div id="basicToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header bg-info text-white d-flex justify-content-between">
+                        <h5 class="my-0">Subscribe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+
+                    <div class="toast-body">
+                        <div id="subscription_area">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="subscribe-now">
+                                            <h5>subscribe</h5>
+                                            <p>Get connected to our insights</p>
+                                            <form class="subscribe-form">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" name="email"
+                                                        placeholder="Enter your email">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default subscribe-btn bg-info text-white"
+                                                            type="button">subscribe</button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Frequently Asked Questions -->
-        <section class="container my-5 py-5">
+        <section class="container my-5 py-5" id="faq">
             <div>
                 <h2 class="text-center my-5">Frequently Asked Questions</h2>
             </div>
@@ -269,6 +308,7 @@
                 </div>
             </div>
         </section>
+
 
         <!-- contact Section -->
         <section id="contact">
@@ -343,6 +383,7 @@
         </section>
     </main>
 
+    <!-- footer -->
     <footer class="container-fluid my-5 backside-footer">
         <section class="container py-4">
             <div class="row">
@@ -367,8 +408,8 @@
         </section>
     </footer>
 
-
-
+    <!-- Toast Script -->
+    <script src="./js/toast.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
