@@ -4,6 +4,12 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+.website-caption{
+    color: #0A0826;
+}
+.fa-check-circle{
+    color: #5243C2;
+}
 
 /* Carousel */
 .banner-image{
@@ -15,18 +21,35 @@ body{
     background-color: transparent;
     border: none;
 }
-.active-card{
-    background-color: #3F87F5 !important;
-    color: #fff;
-}
-.active-btn{
-    background-color: #fff;
+.choose-btn:hover{
+    color: white;
+    font-weight: 600;
 }
 .backside-footer{
     background-color: #0B0D17;
     height: 250px;
 }
-
+.card-caption h4{
+    color: #231D4F;
+}
+.card-caption h5{
+    color: #231D4F;
+}
+.card-caption p{
+    color: #848199;
+}
+.card-caption span{
+    color: #848199;
+}
+.offer{
+    position: relative;
+}
+.offer img{
+    position: absolute;
+    right: -45px;
+    top: -40px;
+    width: 70px;
+}
 
 /* Toast Style */
 .toast-button{

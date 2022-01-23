@@ -25,7 +25,7 @@
 
     <!-- Header Section with navbar -->
     <header id="home">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="./images/favicon.png" alt="" width="30" height="24">eero Digital
@@ -56,7 +56,7 @@
         </nav>
 
         <!-- Carousel Image Slider Section -->
-        <section class="mb-5">
+        <section class="mb-5 py-5 mt-2">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -74,7 +74,8 @@
                             <p>We have an excellent track record for the best customer’s satisfaction. We believe in
                                 keeping our customer happy and providing them with products at a very competent price.
                             </p>
-                            <button type="button" class="btn btn-primary">Get Started</button>
+                            <button type="button" class="btn btn-primary shadow rounded-3 text-white">Get
+                                Started</button>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -116,12 +117,12 @@
         <!-- package section -->
         <section class="container py-3" id="packages">
             <div>
-                <h2 class="text-center my-5">Our Package</h2>
+                <h2 class="text-center my-5 website-caption">Our Package</h2>
             </div>
             <div class="row row-cols-1 row-cols-md-4 g-4">
                 <div class="col">
                     <div class="card h-100 shadow-sm p-3 mb-5 bg-body rounded-3 border-0">
-                        <div class="card-body">
+                        <div class="card-body card-caption">
                             <h4>$300</h4>
                             <h5>Business fair</h5>
                             <p class="card-text">For most businesses event
@@ -133,13 +134,13 @@
                             <span class="d-block"><i class="far fa-check-circle pe-2"></i>Per day bill</span>
                         </div>
                         <div class="card-footer m-auto card-footer-bg">
-                            <a href="" class="btn btn-outline-info rounded-pill">Choose Plan</a>
+                            <a href="" class="btn btn-outline-info rounded-pill choose-btn">Choose Plan</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100 shadow-sm p-3 mb-5 bg-body rounded-3 border-0">
-                        <div class="card-body">
+                        <div class="card-body card-caption">
                             <h4>$500</h4>
                             <h5>Wedding basic</h5>
                             <p class="card-text">For weddings with basic plan
@@ -151,14 +152,17 @@
                             <span class="d-block"><i class="far fa-check-circle pe-2"></i>Per day bill</span>
                         </div>
                         <div class="card-footer m-auto card-footer-bg">
-                            <a href="" class="btn btn-outline-info rounded-pill">Choose Plan</a>
+                            <a href="" class="btn btn-outline-info rounded-pill choose-btn">Choose Plan</a>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col bg-info rounded-3">
                     <div class="card h-100 shadow-lg p-3 mb-5 bg-body rounded active-card">
-                        <div class="card-body">
-                            <h4>$500</h4>
+                        <div class="card-body shadow-sm p-3 mb-5 bg-body rounded-3">
+                            <div class="d-flex justify-content-between align-items-baseline offer">
+                                <h4>$500</h4>
+                                <img class="img-fluid" src="./images/hotdeal-removebg-preview.png" alt="">
+                            </div>
                             <h5>Wedding basic</h5>
                             <p class="card-text">For weddings with basic plan
                                 and limited item, check it...</p>
@@ -169,13 +173,13 @@
                             <span class="d-block"><i class="far fa-check-circle pe-2"></i>Buffet food</span>
                         </div>
                         <div class="card-footer m-auto card-footer-bg">
-                            <a href="" class="btn btn-outline-info rounded-pill active-btn">Choose Plan</a>
+                            <a href="" class="btn btn-info rounded-pill text-light choose-btn">Choose Plan</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100 shadow-sm p-3 mb-5 bg-body rounded-3 border-0">
-                        <div class="card-body">
+                        <div class="card-body card-caption">
                             <h4>$1200</h4>
                             <h5>Corporate event</h5>
                             <p class="card-text">For most corporate business
@@ -187,7 +191,7 @@
                             <span class="d-block"><i class="far fa-check-circle pe-2"></i>Per day bill</span>
                         </div>
                         <div class="card-footer m-auto card-footer-bg">
-                            <a href="" class="btn btn-outline-info rounded-pill">Choose Plan</a>
+                            <a href="" class="btn btn-outline-info rounded-pill choose-btn">Choose Plan</a>
                         </div>
                     </div>
                 </div>
@@ -237,7 +241,7 @@
         <!-- Frequently Asked Questions -->
         <section class="container my-5 py-5" id="faq">
             <div>
-                <h2 class="text-center my-5">Frequently Asked Questions</h2>
+                <h2 class="text-center my-5 website-caption">Frequently Asked Questions</h2>
             </div>
             <div class="row">
                 <div class="col-md-6">
@@ -314,7 +318,7 @@
         <section id="contact">
             <div class="container">
                 <div>
-                    <h2 class="text-center my-5">Contact</h2>
+                    <h2 class="text-center my-5 website-caption">Contact</h2>
                 </div>
 
                 <div>
