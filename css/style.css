@@ -4,3 +4,21 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+/* Carousel */
+.banner-image{
+    filter: grayscale(0.5) blur(1px);
+}
+
+/* Package */
+.card-footer-bg{
+    background-color: transparent;
+    border: none;
+}
+.active-card{
+    background-color: #3F87F5 !important;
+    color: #fff;
+}
+.active-btn{
+    background-color: #fff;
+}
