@@ -103,6 +103,28 @@ body{
     width: 70px;
 }
 
+.card-effect {
+    position: relative;
+  }
+  .card-effect:before, .card-effect:after
+  {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 25px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    box-shadow: 0 35px 20px #777;
+    transform: rotate(-8deg);
+  }
+  .card-effect:after {
+    transform: rotate(8deg);
+    right: 10px;
+    left: auto;
+  }
 
 
 /* FAQ */
@@ -120,4 +142,16 @@ body{
 .backside-footer{
     background-color: #0B0D17;
     height: 220px;
+}
+
+
+
+  
+@media only screen and (max-width: 600px){
+    .mobile-device{
+        height: 400px;
+    }
+    .mobile-device img{
+        height: 400px;
+    }
 }

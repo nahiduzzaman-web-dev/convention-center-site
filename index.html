@@ -25,7 +25,7 @@
 
     <!-- Header Section with navbar -->
     <header id="home">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="./images/favicon.png" alt="" width="30" height="24">eero Digital
@@ -52,16 +52,24 @@
                         <li>
                             <!-- Toast Section -->
                             <section>
-                                <button type="button" class="btn bg-info text-white rounded-pill toast-btn mx-2"
-                                    id="basicToastBtn" data-bs-toggle="tooltip"
-                                    data-bs-placement="top">Subscribe</button>
+                                <button type="button"
+                                    class="btn bg-info text-white rounded-pill toast-btn mx-2 position-relative"
+                                    id="basicToastBtn" data-bs-toggle="tooltip" data-bs-placement="top">Subscribe <span
+                                        class="position-absolute top-0 start-95 pt-2 translate-middle badge rounded-pill">
+                                        <i class="fas fa-crosshairs text-dark"></i>
+                                        <span class="visually-hidden">unread
+                                            messages</span>
+                                    </span>
+                                </button>
                                 <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 11">
                                     <div id="basicToast" class="toast" role="alert" aria-live="assertive"
                                         aria-atomic="true">
                                         <div class="toast-header bg-info text-white d-flex justify-content-between">
                                             <h5 class="my-0">Subscribe</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="toast"
-                                                aria-label="Close"></button>
+                                                aria-label="Close">
+
+                                            </button>
                                         </div>
 
                                         <div class="toast-body">
@@ -79,7 +87,9 @@
                                                                         <span class="input-group-btn">
                                                                             <button
                                                                                 class="btn btn-default subscribe-btn bg-info text-white"
-                                                                                type="button">subscribe</button>
+                                                                                type="button">subscribe
+
+                                                                            </button>
                                                                         </span>
                                                                     </div>
                                                                 </form>
@@ -97,10 +107,13 @@
                 </div>
             </div>
         </nav>
+    </header>
+
+    <main>
 
         <!-- Carousel Image Slider Section -->
         <section class="mb-5 banner">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide d-block" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -110,7 +123,7 @@
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active mobile-device">
                         <img src="./images/banner-1.jpg" class="d-block w-100 img-fluid banner-image" alt="...">
                         <div class="carousel-caption d-md-block carosel-cap-title ">
                             <h2>Promotional activities of agora Launching at
@@ -120,7 +133,7 @@
                                 Started</button>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item mobile-device">
                         <img src="./images/banner-2.jpg" class="d-block w-100 img-fluid banner-image" alt="...">
                         <div class="carousel-caption d-md-block carosel-cap-title">
                             <h2>Marriage activities of Mayor's daughter at Rajshahi</h2>
@@ -128,7 +141,7 @@
                             <button type="button" class="btn btn-primary">Get Started</button>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item mobile-device">
                         <img src="./images/banner-3.jpg" class="d-block w-100 img-fluid banner-image" alt="...">
                         <div class="carousel-caption d-md-block carosel-cap-title">
                             <h2>GOLF TOURNAMENT 2020 at Army Golf
@@ -150,9 +163,6 @@
                 </button>
             </div>
         </section>
-    </header>
-
-    <main>
 
         <!-- package section -->
         <section class="container py-2" id="packages">
@@ -164,7 +174,7 @@
                     <div class="card h-100 shadow-sm p-3 mb-5 bg-body rounded-3 border-0">
                         <div class="card-body card-caption">
                             <h4>$300</h4>
-                            <h5>Business fair</h5>
+                            <h5 class="pb-3">Business fair</h5>
                             <p class="card-text">For most businesses event
                                 like book fair, craft fair..</p>
                             <span class="d-block"><i class="far fa-check-circle pe-2"></i>limited space access</span>
@@ -182,7 +192,7 @@
                     <div class="card h-100 shadow-sm p-3 mb-5 bg-body rounded-3 border-0">
                         <div class="card-body card-caption">
                             <h4>$500</h4>
-                            <h5>Wedding basic</h5>
+                            <h5 class="pb-3">Wedding basic</h5>
                             <p class="card-text">For weddings with basic plan
                                 and limited item, check it...</p>
                             <span class="d-block"><i class="far fa-check-circle pe-2"></i>mangement support</span>
@@ -197,13 +207,14 @@
                     </div>
                 </div>
                 <div class="col bg-info rounded-3">
-                    <div class="card h-100 shadow-lg p-3 mb-5 bg-body rounded-3 active-card border border-info">
+                    <div
+                        class="card h-100 shadow-lg p-3 mb-5 bg-body rounded-3 active-card border border-info card-effect">
                         <div class="card-body shadow-sm p-3 mb-5 bg-body rounded-3 border-top border-info">
                             <div class="d-flex justify-content-between align-items-baseline offer">
                                 <h4>$500</h4>
                                 <img class="img-fluid" src="./images/hotdeal-removebg-preview.png" alt="">
                             </div>
-                            <h5>Wedding basic</h5>
+                            <h5 class="pb-3">Wedding basic</h5>
                             <p class="card-text">For weddings with basic plan
                                 and limited item, check it...</p>
                             <span class="d-block"><i class="far fa-check-circle pe-2"></i>mangement support</span>
@@ -221,7 +232,7 @@
                     <div class="card h-100 shadow-sm p-3 mb-5 bg-body rounded-3 border-0">
                         <div class="card-body card-caption">
                             <h4>$1200</h4>
-                            <h5>Corporate event</h5>
+                            <h5 class="pb-3">Corporate event</h5>
                             <p class="card-text">For most corporate business
                                 events are awesome, check it...</p>
                             <span class="d-block"><i class="far fa-check-circle pe-2"></i>premium Decoration</span>
